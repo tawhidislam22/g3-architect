@@ -101,11 +101,60 @@
     .team-feature p{
         font-weight: 500;
         margin-bottom: 20px;
+
+    }
+    /* love section */
+    .love-container{
+        gap: 140px;
+    }
+    #enjoy{
+        border-left: 5px solid rgb(255, 144, 14);
+        padding-left: 10px;
+    }
+    .love-content>p , .version>p{
+        color: rgb(114, 114, 114);
+        font-weight: 600;
+    }
+    .version h4{
+        color: rgb(19, 19, 19);
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .love-content{
+        max-width: 550px;
+
+    }
+    .version{
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+    #btn{
+        color: white;
+        border-radius: 8px;
+        background: rgb(255, 144, 14);
+        padding: 40px;
+        text-align: center;
+        margin-left: -100px;
+        margin-top: -100px;
+        border: none;
+    }
+    #btn-text{
+        Font-weight:700;
+        Font-size:65px;
+    }
+    #btn-text2{
+        font-size: 1.25rem;
+        font-weight: 500;
     }
     /* facts card */
     .fact-container{
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        
+        
     }
     .fact-card{
         align-items: center;
@@ -138,18 +187,60 @@
         max-width: 550px;
         margin-bottom: 30px;
     }
+    /* sponspor section */
+    .sponspor-content{
+        max-width: 550px;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .sponspor-companies{
+        display: grid ;
+        grid-template-columns: repeat(5,1fr);
+    }
+    .sponspor-companies img{
+        filter: grayscale(100);
+    }
+    footer{
+        border-radius: 8px;
+        background-color: rgb(255, 244, 231);
+        padding: 40px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 130PX;
+    }
+    footer p{
+        color: rgb(66, 66, 66);
+        font-size: 20px;
+        font-weight: 400;
+    }
 /* media */
 @media  screen and (max-width:576px) {
     .navbar,
      .nav-links,
-     .team{
+     .team,
+     .love-container{
         flex-direction: column;
     }
-    .team-image{
-        grid-template-columns: repeat(1,1fr);
+    .team-image,
+    .fact-container,
+    .sponspor-companies{
+        grid-template-columns: 1fr;   
+           
+    }
+    .fact-container,
+    .sponspor-companies{
+        gap: 30px;
+        justify-items: center;
+        
     }
     .team-feature{
         margin-left: 20px;
+    }
+    #btn{
+        margin: 10px auto ;
+    }
+    .love-image img{
+        width: 100%;
     }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
